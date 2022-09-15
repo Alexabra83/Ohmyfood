@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shrikhand&display=swap');
 
-@media screen and (max-width: 767px) {
 body {
     box-sizing: content-box;
     margin: auto;
@@ -318,7 +317,7 @@ footer li {
   border-radius: 18px;
   padding: 12px 0 10px 12px;
   width: 90%;
-  box-shadow: 5px 5px 3px var(--dark-grey-shadow);
+  box-shadow: 5px 5px 3px grey;
   overflow: hidden;
   background-color: #ffffff;
   cursor: pointer;
@@ -367,6 +366,3 @@ footer li {
   margin-top: 5%;
 }
 
-
-
-}
