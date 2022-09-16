@@ -157,12 +157,12 @@ main a {
 
 .selections_restaurants h3{
   margin: 20px 0 0 15px;
-  color: #000000;
+  color: black;
 }
 
 .selections_restaurants p {
   margin: 5px 0 0 15px;
-  color: #000000;
+  color: black;
 }
 
 figure i {
@@ -186,7 +186,7 @@ figure i {
 
 footer {
   background-color: rgb(59, 59, 59);
-  color: #ffffff;
+  color: white;
 }
 
 footer h2 {
@@ -319,7 +319,7 @@ footer li {
   width: 90%;
   box-shadow: 5px 5px 3px grey;
   overflow: hidden;
-  background-color: #ffffff;
+  background-color: white;
   cursor: pointer;
 }
 
@@ -366,3 +366,17 @@ footer li {
   margin-top: 5%;
 }
 
+@keyframes progressive {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.menus li{
+  animation: progressive 1s both;
+}
