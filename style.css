@@ -67,10 +67,17 @@ form {
   border: none;
   border-radius: 30px;
   padding: 18px 30px 18px 30px;
-  background-color: rgb(180, 133, 223);
+  background: linear-gradient(rgb(106, 0, 255), rgb(227, 71, 235));
   box-shadow: 0 5px 5px 5px rgba(128, 128, 128, 0.148);
   color: white;
   text-decoration: none;
+}
+
+.presentation a:hover{
+  cursor: pointer;
+  transition-duration: 1s;
+  background: linear-gradient(hsla(297, 80%, 60%, 0.301), rgba(106, 0, 255, 0.302));
+  color: #000000;
 }
 
 .fonctionnement h2{
@@ -158,6 +165,12 @@ main a {
   overflow: hidden;
   box-shadow:0 5px 5px 5px rgb(179, 179, 179);
   background-color: white;
+}
+
+.selections_restaurants:hover{
+  transition-duration: 1s;
+  background-color: rgba(0, 102, 255, 0.253);
+  box-shadow: 10px 10px 10px gray;
 }
 
 .photo-resto{
@@ -369,13 +382,20 @@ footer li {
   border: none;
   border-radius: 30px;
   padding: 12px 18px 12px 18px;
-  background-color: rgb(180, 133, 223);
+  background: linear-gradient(rgb(106, 0, 255), rgb(227, 71, 235));
   box-shadow: 0 5px 5px 5px rgba(128, 128, 128, 0.148);
   color: white;
   text-decoration: none;
   margin-left: 25%;
   margin-right: 25%;
   margin-top: 5%;
+}
+
+.articles_menus a:hover{
+  cursor: pointer;
+  transition-duration: 1s;
+  background: linear-gradient(hsla(297, 80%, 60%, 0.301), rgba(106, 0, 255, 0.302));
+  color: #000000;
 }
 
 @keyframes liste-menus {
