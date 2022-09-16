@@ -366,7 +366,7 @@ footer li {
   margin-top: 5%;
 }
 
-@keyframes progressive {
+@keyframes liste-menus {
   0% {
     transform: translateY(20px);
     opacity: 0;
@@ -378,5 +378,5 @@ footer li {
 }
 
 .menus li{
-  animation: progressive 1s both;
+  animation: liste-menus 1s both;
 }
