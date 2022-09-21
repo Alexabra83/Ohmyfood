@@ -557,7 +557,49 @@ footer li {
 
 /*---------------------responsive desktop---------------------------*/
 
+.articles_menus {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.menus {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 0 auto;
+  padding-bottom: 30px;
+  width: 33%;
+}
+
+.articles_menus h2 {
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+.articles_menus p {
+  font-size: 14px;
+}
+
+.articles_menus a {
+  margin-left: 40%;
+  margin-right: 40%;
+  border-radius: 30px;
+  padding: 18px 30px 18px 30px;
+}
+
+.articles_menus i {
+  font-size: 30px;
+}
+
 header h1 {
+  font-size: 40px;
+}
+
+.header_cartes h1 {
+  font-size: 40px;
+}
+
+.header_cartes i {
   font-size: 40px;
 }
 
@@ -578,7 +620,7 @@ header h1 {
   width: 25%;
 }
 
-.fonctionnement_liste p{
+.fonctionnement_liste p {
   text-align: center;
 }
 
