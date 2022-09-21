@@ -524,3 +524,38 @@ footer li {
   color: #ffffff;
 }
 
+/*---------------Responsive--------------*/
+
+@media (min-width: 768px) {
+
+main article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+article a {
+  margin: auto auto 50px auto;
+  width: 45%;
+}
+
+footer h2 {
+  padding-bottom: 60px;
+  font-size: 25px;
+  text-align: center;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer li {
+  width: 25%;
+  text-align: center;
+}
+
+/*---------------------responsive desktop---------------------------*/
+
+
+}
