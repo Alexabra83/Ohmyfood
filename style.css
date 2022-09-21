@@ -557,5 +557,35 @@ footer li {
 
 /*---------------------responsive desktop---------------------------*/
 
+header h1 {
+  font-size: 40px;
+}
+
+.fonctionnement h2 {
+  margin: auto;
+  padding-bottom: 30px;
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.fonctionnement_liste {
+  display: flex;
+  justify-content: space-around;
+}
+
+.fonctionnement_liste li {
+  width: 25%;
+}
+
+.fonctionnement_liste p{
+  text-align: center;
+}
+
+
+
+
+
+
 
 }
