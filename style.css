@@ -463,6 +463,48 @@ footer li {
   font-weight: bold;
 }
 
+/*---------------------check---------------------*/
+
+.check_menus {
+  position: absolute;
+  right: -82px;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 18px 18px 0;
+  height: 100%;
+  width: 62px;
+  background-color: greenyellow;
+}
+
+.check_menus i {
+  font-size: 30px;
+  color: #fff;
+}
+
+.articles_menus li:hover {
+  transform: scale(1.05);
+}
+
+.articles_menus li:hover .check_menus {
+  transition: all 1s ease;
+  transform: translateX(-80px);
+}
+
+.articles_menus li:hover i {
+  transition: all 1s ease;
+  transform: rotate(1turn);
+}
+
+.articles_menus li:hover b {
+  transition: all 1s ease;
+  transform: translate(-50px);
+}
+
+
+
+
 .articles_menus a {
   text-align: center;
   border: none;
