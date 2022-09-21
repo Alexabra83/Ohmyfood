@@ -221,6 +221,8 @@ main a {
   color: black;
 }
 
+/*-------------------------Nouveau----------------------*/
+
 .nouveau {
   position: absolute;
   right: 15px; 
@@ -237,7 +239,7 @@ main a {
 
 figure i {
   position: absolute;
-  right: 30px;
+  right: 30px; 
   bottom: 28px;
   font-size: 20px;
   cursor: pointer;
@@ -245,18 +247,17 @@ figure i {
 }
 
 .full-heart {
-  font-size: 35px;
+  font-size: 20px;
   font-weight: bolder;
   opacity: 0;
   background-clip: text;
-  -webkit-background-clip: text;
   color: transparent;
-  background-image: linear-gradient(violet , blue);
+  background-image: linear-gradient(blue, green);
   transform: scale(1);
   transition: all 1s ease;
 }
 
-.full-heart:active {
+.full-heart:hover {
   opacity: 1;
 }
 
@@ -354,10 +355,28 @@ footer li {
   font-family: 'Shrikhand';
 }
 
+/*-----------------------heart menus--------------------*/
 .heart-menus {
   position: absolute;
-  right: 40px;
+  right: 50px;
   font-size: 20px;
+}
+
+.full-heart-menus {
+  font-size: 20px;
+  font-weight: bolder;
+  transform: scale(1);
+  transition: all 1s ease;
+  background-image: linear-gradient(green, blue);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  color: transparent;
+  cursor: pointer;
+}
+
+.full-heart-menus:hover {
+  opacity: 1;
 }
 
 .menus {
