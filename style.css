@@ -221,6 +221,20 @@ main a {
   color: black;
 }
 
+.nouveau {
+  position: absolute;
+  right: 15px; 
+  top: 15px;
+  border-radius: 2px;
+  padding: 5px 10px;
+  font-weight: 600;
+  background-color: greenyellow;
+  color: green;
+  cursor: pointer;
+}
+
+/*-------------------------coeur----------------------*/
+
 figure i {
   position: absolute;
   right: 30px;
@@ -229,15 +243,21 @@ figure i {
   cursor: pointer;
   color: black;
 }
-/*-------------------------coeur----------------------*/
+
 .full-heart {
-  font-size: 40px;
+  font-size: 35px;
+  font-weight: bolder;
   opacity: 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(violet , blue);
+  transform: scale(1);
+  transition: all 1s ease;
 }
 
 .full-heart:active {
   opacity: 1;
-  color: rgb(186, 51, 155);
 }
 
 /*---------------------------footer------------------------*/
