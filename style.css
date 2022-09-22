@@ -5,6 +5,7 @@
   --secondary: #FF79DA;
   --tertiary: #99E2D0;
   --primary-clic: #9256dc80;
+  --primary-hover: #9256dc29;
   --secondary-clic: #ff79d980;;
   --background: #f2f2f2;
   --footer: #4c4c4c;
@@ -156,6 +157,7 @@ form {
 .fonctionnement li:hover{
   cursor: pointer;
   transform: scale(1.05);
+  background-color: var(--primary-hover);
   color: #000000;
 }
 
