@@ -37,6 +37,65 @@
   }
 }
 
+.spin-loader {
+  background-color: red;
+  color: white;
+  height: 500px;
+  line-height: 500px;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Shrikhand";
+}
+
+.loader{
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.loader-circles {
+  border-radius: 50px;
+  border: 3px solid transparent;
+  border-top-color: var(--primary);
+  animation:spin 3s linear infinite;
+}
+
+.loader-circles:after{
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  bottom: 5px;
+  right: 5px;
+  border-radius: 50px;
+  border: 3px solid transparent;
+  border-top-color: var(--secondary);
+  opacity: 1;
+  animation:spin 2s linear infinite;
+}
+
+.loader-circles:before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  bottom: 12px;
+  right: 12px;
+  border-radius: 50px;
+  border: 3px solid transparent;
+  border-top-color: var(--tertiary);
+  opacity: 1;
+  animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+  0%{ transform: rotate(0deg); }
+  100%{ transform: rotate(360deg)}
+}
+
+
 body {
     box-sizing: content-box;
     margin: auto;
