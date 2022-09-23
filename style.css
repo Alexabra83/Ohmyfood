@@ -6,7 +6,7 @@
   --tertiary: #99E2D0;
   --primary-clic: #9256dc80;
   --primary-hover: #9256dc29;
-  --secondary-clic: #ff79d980;;
+  --secondary-clic: #ff79d980;
   --background: #f2f2f2;
   --footer: #4c4c4c;
   --search-back: #dedede;
@@ -27,20 +27,46 @@
   }
 }
 
+@keyframes spin {
+  0%{ transform: rotate(0deg); }
+  100%{ transform: rotate(360deg)}
+}
+
+@keyframes loader-off {
+  0% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  100%{
+    transform: scaleX(0);
+    opacity: 0;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    overflow-y: hidden;  
+  }
+  100% {
+    overflow-y: auto;
+  }
+}
+
 .spin-loader {
   box-sizing: content-box;
-  display: flex;
+  display: block;
   background-color: white;
   color: rgb(0, 0, 0);
   top: 0%;
+  padding-top: 45vh;
   height: 100vh;
   width: 100%;
   z-index: 999;
   position: fixed;
-  justify-content: center;
   text-align: center;
   font-size: 40px;
   font-family: "Shrikhand";
+  animation: loader-off 1s 3s ease forwards;
 }
 
 .loader{
@@ -86,11 +112,9 @@
   animation:spin 1s linear infinite;
 }
 
-@keyframes spin{
-  0%{ transform: rotate(0deg); }
-  100%{ transform: rotate(360deg)}
+.corp{
+  animation: scroll 6s ease-in-out;
 }
-
 
 body {
     box-sizing: content-box;
